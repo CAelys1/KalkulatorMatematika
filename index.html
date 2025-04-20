@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kalkulator Lengkap By M.Iksan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h2>Kalkulator Matematika By M.Iksan</h2>
+
+  <!-- Persamaan Linear -->
+  <div class="box">
+    <h3>Persamaan Linear (ax + b = c)</h3>
+    <input type="text" id="persamaan" placeholder="Contoh: 2x + 5 = 15">
+    <div class="btn-group">
+      <button onclick="hitungPersamaan()">Hitung</button>
+      <button onclick="clearPersamaan()">Clear</button>
+    </div>
+    <div class="hasil" id="outputLinear"></div>
+  </div>
+
+  <!-- Kalkulator Biasa -->
+  <div class="box">
+    <h3>Kalkulator Biasa</h3>
+    <input type="number" id="angka1" placeholder="Angka 1">
+    <input type="number" id="angka2" placeholder="Angka 2">
+    <div class="btn-group">
+      <button onclick="hitung('tambah')">+</button>
+      <button onclick="hitung('kurang')">-</button>
+      <button onclick="hitung('kali')">×</button>
+      <button onclick="hitung('bagi')">÷</button>
+      <button onclick="clearKalkulator()">Clear</button>
+    </div>
+    <div class="hasil" id="outputKalkulator"></div>
+  </div>
+  <!-- Pythagoras -->
+<div class="box">
+  <h3>Teorema Pythagoras</h3>
+  <input type="number" id="pytaA" placeholder="Sisi a">
+  <input type="number" id="pytaB" placeholder="Sisi b">
+  <div class="btn-group">
+    <button onclick="hitungPythagoras()">Hitung</button>
+    <button onclick="clearPythagoras()">Clear</button>
+  </div>
+  <div class="hasil" id="outputPythagoras"></div>
+</div>
+
+<!-- Persamaan Linear 3 Variabel -->
+<div class="box">
+  <h3>Persamaan Linear 3 Variabel</h3>
+  <p>Masukkan koefisien dan konstanta dari tiga persamaan:</p>
+  <input type="text" id="plv1" placeholder="Contoh: 2 3 -1 4 (artinya: 2x + 3y - z = 4)">
+  <input type="text" id="plv2" placeholder="Contoh: 1 -1 2 3">
+  <input type="text" id="plv3" placeholder="Contoh: 3 2 1 10">
+  <div class="btn-group">
+    <button onclick="hitungSPL3()">Hitung</button>
+    <button onclick="clearSPL3()">Clear</button>
+  </div>
+  <div class="hasil" id="outputSPL3"></div>
+</div>
+<!-- Fungsi Kuadrat -->
+<div class="box">
+  <h3>Fungsi Kuadrat (ax² + bx + c = 0)</h3>
+  <input type="number" id="a" placeholder="Nilai a">
+  <input type="number" id="b" placeholder="Nilai b">
+  <input type="number" id="c" placeholder="Nilai c">
+  <div class="btn-group">
+    <button onclick="hitungKuadrat()">Hitung</button>
+    <button onclick="clearKuadrat()">Clear</button>
+  </div>
+  <div class="hasil" id="outputKuadrat"></div>
+</div>
+  <!-- Statistika Dasar -->
+<div class="box">
+  <h3>Statistika Dasar</h3>
+  <input type="text" id="dataStatistika" placeholder="Masukkan data, pisahkan dengan koma (contoh: 1,2,2,3,4)">
+  <div class="btn-group">
+    <button onclick="hitungStatistika()">Hitung</button>
+    <button onclick="clearStatistika()">Clear</button>
+  </div>
+  <div class="hasil" id="outputStatistika"></div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
